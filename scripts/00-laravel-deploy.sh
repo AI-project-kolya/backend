@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 echo "Running composer"
-composer global require hirak/prestissimo
-composer update
+composer self-update 2.1.14
+composer install
 
 echo "generating application key..."
 php artisan key:generate --show
@@ -12,5 +12,3 @@ php artisan config:cache
 echo "Caching routes..."
 php artisan route:cache
 
-echo "Running migrations..."
-php artisan migrate --force
