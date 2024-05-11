@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 echo "Running composer"
-composer self-update 2.1.14
-composer install
+composer update ramsey/uuid
 
 echo "generating application key..."
 php artisan key:generate --show
