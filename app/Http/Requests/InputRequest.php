@@ -26,7 +26,7 @@ class InputRequest extends FormRequest
             'blue' => 'required|boolean',
             'clock_speed' => 'required|numeric|min:0.5|max:3',
             'dual_sim' => 'required|boolean',
-            'four_g' => 'required|numeric|min:0|max:20',
+            'four_g' => 'required|boolean',
             'int_memory' => 'required|integer|min:2|max:65',
             'mobile_wt' => 'required|numeric|min:80|max:200',
             'n_cores' => 'required|integer|min:1|max:8',
